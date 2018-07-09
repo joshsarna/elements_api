@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     get '/elements' => 'elements#index'
     get '/elements/:id' => 'elements#show'
     post '/elements' => 'elements#create'
+    patch '/elements/:id' => 'elements#update'
+    delete '/elements/:id' => 'elements#destroy'
   end
 end
