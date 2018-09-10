@@ -18,12 +18,12 @@ class Api::ElementsController < ApplicationController
   end
 
   def show
-    @element = Element.find(params['id'])
+    @element = Element.find(params[:id])
     render "show.json.jbuilder"
   end
 
   def update
-    @element = Element.find(params['id'])
+    @element = Element.find(params[:id])
     @element.update(
       name: params[:name] || @element.name,
       symbol: params[:symbol] || @element.symbol,
@@ -36,7 +36,7 @@ class Api::ElementsController < ApplicationController
   end
 
   def destroy
-    @element = Element.find(params['id'])
+    @element = Element.find(params[:id])
     @element.delete
     render "index.json.jbuilder"
   end
