@@ -20,18 +20,7 @@
       padding: 10px;
     }
 
-    .col {
-      box-shadow:inset 0px 0px 0px 5px #000;
-      border: solid 5px rgba(0,0,0,0);
-      border-radius: 15px;
-      height: 60px;
-      width: 38px;
-      background: #ffffff;
-      padding: 10px;
-      /*background-clip: padding-box;*/
-    }
-
-    .my-row {
+    .row {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
@@ -40,21 +29,22 @@
       margin-left: -15px;
     }
 
-    .empty-col {
-      box-shadow:inset 0px 0px 0px 5px #ffffff;
-      border: solid 5px rgba(0,0,0,0);
-      border-radius: 15px;
+    .col {
+      box-shadow:inset 0px 0px 0px 2px #000;
       height: 60px;
       width: 38px;
       background: #ffffff;
       padding: 10px;
+    }
 
-      -ms-flex-preferred-size: 0;
+    .empty-col {
+      box-shadow:inset 0px 0px 0px 2px #ffffff;
+      height: 60px;
+      width: 38px;
+      background: #ffffff;
+      padding: 10px;
       flex-basis: 0;
-      -ms-flex-positive: 1;
       flex-grow: 1;
-      max-width: 100%;
-      /*background-clip: padding-box;*/
     }
   </style>
 </head>
@@ -77,7 +67,7 @@
     <h1>{{ message }}</h1>
     <!-- START OF TABLE -->
     <div class="container"> <!-- Row 1 -->
-      <div class="my-row">
+      <div class="row">
         <div class="col">{{ elements[0].basic_info.symbol}}</div>
         <div class="empty-col"></div>
         <div class="empty-col"></div>
@@ -97,9 +87,8 @@
         <div class="empty-col"></div>
         <div class="col">{{ elements[1].basic_info.symbol}}</div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 2 -->
-      <div class="my-row">
+     <!-- Row 2 -->
+      <div class="row">
         <div class="col">{{ elements[2].basic_info.symbol}}</div>
         <div class="col">{{ elements[3].basic_info.symbol}}</div>
         <div class="empty-col"></div>
@@ -119,9 +108,8 @@
         <div class="col">{{ elements[8].basic_info.symbol}}</div>
         <div class="col">{{ elements[9].basic_info.symbol}}</div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 3 -->
-      <div class="my-row">
+     <!-- Row 3 -->
+      <div class="row">
         <div class="col">{{ elements[10].basic_info.symbol}}</div>
         <div class="col">{{ elements[11].basic_info.symbol}}</div>
         <div class="empty-col"></div>
@@ -141,9 +129,8 @@
         <div class="col">{{ elements[16].basic_info.symbol}}</div>
         <div class="col">{{ elements[17].basic_info.symbol}}</div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 4 -->
-      <div class="my-row">
+     <!-- Row 4 -->
+      <div class="row">
         <div class="col">{{ elements[18].basic_info.symbol}}</div>
         <div class="col">{{ elements[19].basic_info.symbol}}</div>
         <div class="col">{{ elements[20].basic_info.symbol}}</div>
@@ -163,9 +150,8 @@
         <div class="col">{{ elements[34].basic_info.symbol}}</div>
         <div class="col">{{ elements[35].basic_info.symbol}}</div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 5 -->
-      <div class="my-row">
+     <!-- Row 5 -->
+      <div class="row">
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
@@ -185,9 +171,8 @@
         <div class="col"></div>
         <div class="col"></div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 6 -->
-      <div class="my-row">
+     <!-- Row 6 -->
+      <div class="row">
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
@@ -207,9 +192,8 @@
         <div class="col"></div>
         <div class="col"></div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 7 -->
-      <div class="my-row">
+     <!-- Row 7 -->
+      <div class="row">
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
@@ -229,9 +213,8 @@
         <div class="col"></div>
         <div class="col"></div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 8 -->
-      <div class="my-row">
+     <!-- Row 8 -->
+      <div class="row">
         <div class="empty-col"></div>
         <div class="empty-col"></div>
         <div class="empty-col"></div>
@@ -251,9 +234,8 @@
         <div class="col"></div>
         <div class="col"></div>
       </div>
-    </div>
-    <div class="container"> <!-- Row 9 -->
-      <div class="my-row">
+     <!-- Row 9 -->
+      <div class="row">
         <div class="empty-col"></div>
         <div class="empty-col"></div>
         <div class="empty-col"></div>
